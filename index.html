@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Pilih:</h2>
-        <button class="button choice" onclick="play('batu')">Batu</button>
-        <button class="button choice" onclick="play('gunting')">Gunting</button>
-        <button class="button choice" onclick="play('kertas')">Kertas</button>
-        <div id="ai-choice"></div>
-        <div id="result"></div>
-        <button id="retry" class="button" onclick="retry()">Main Lagi</button>
+        <h1>Rock Paper Scissors</h1>
+        <div class="game-area">
+            <h2>Pilih Opsi:</h2>
+            <div class="choices">
+                <button class="button choice" onclick="play('batu')">Batu</button>
+                <button class="button choice" onclick="play('gunting')">Gunting</button>
+                <button class="button choice" onclick="play('kertas')">Kertas</button>
+            </div>
+            <div class="result-area">
+                <p id="ai-choice"></p>
+                <div id="loading" class="loading">Memilih...</div>
+                <p id="result"></p>
+            </div>
+            <button id="retry" class="button retry" onclick="retry()">Main Lagi</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
