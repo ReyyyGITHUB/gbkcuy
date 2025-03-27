@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pilih:</h2>
+        <button class="button choice" onclick="play('batu')">Batu</button>
+        <button class="button choice" onclick="play('gunting')">Gunting</button>
+        <button class="button choice" onclick="play('kertas')">Kertas</button>
+        <div id="ai-choice"></div>
+        <div id="result"></div>
+        <button id="retry" class="button" onclick="retry()">Main Lagi</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
